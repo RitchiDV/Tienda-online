@@ -93,7 +93,7 @@ WSGI_APPLICATION = 'Tienda_com.wsgi.application'
 #         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 #         'NAME':"gestionpersonal",
 #         "USER": "postgres",
-#         "PASSWORD": "Programacion98",
+#         "PASSWORD": "**********",
 #         "HOST":"127.0.0.1",
 #         "DATABASE_PORT":"5432",
 #     }
@@ -176,7 +176,7 @@ EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST="smtp.gmail.com"
 EMAIL_USE_TLS=True
 EMAIL_PORT=587
-EMAIL_HOST_USER="hakdigital98@gmail.com"
+EMAIL_HOST_USER="**************"
 EMAIL_HOST_PASSWORD="**************"
 
 # Default primary key field type
