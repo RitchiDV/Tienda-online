@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+</head>
+<body>
+    {% extends 'web/base.html' %}
+    {% load static %}
+    {% block content %}
+    <div class="container">
+        <div class="row">
+    
+        {% for post in post  %}
+            
+            <div class="col-md-6">  {% comment %}div de la class"col" {% endcomment %}
+                <div><p>
+                    <div class="card" style="width: 25rem;">
+                        <img src="{{post.imagen.url}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{post.titulo}}</h5>
+                            <p class="card-text">{{post.Contenido}}</p>
+                            <p class="card-text" style= "text-aling: left; 0.3em;">{{post.autor}}</p>
+                        
+                        </div>
+                    </div>
+                
+
+                </p></div>
+            </div>
+
+        {% endfor %}
+    </div>
+        </div>
+
+
+    
+    <section>
+
+        <div style="width: 75%; margin: auto; text-align: center; color:white">
+            
+            categorias:
+            {% for post in post %}
+                {% for categoria in post.categorias.all  %}
+                    <a href= "{% url 'categoria' categoria.id %}">{{categoria.nombre}}</a>
+                {% endfor %}
+
+            
+            {% endfor %}
+            
+            
+        </div>
+
+    </section>
+
+
+    {% endblock  %}
+</body>
+</html>
+
+
+
+
+{% comment %} <h2 style= "color: white;">{{servicio.titulo}}</h2>
+            <ps style= "color: white;">{{servicio.Contenido}}</p>
+            <p><img src="{{servicio.imagen.url}}"></p> {% endcomment %}
+
+
+    {% comment %} <a href="" class="btn btn-primary">Go somewhere</a> {% endcomment %}
+    
+    

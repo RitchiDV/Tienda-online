@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dis/contacto.css">
+    <title>contacto</title>
+</head>
+<body>
+    
+    <h1>
+        Bienvenido
+    </h1>
+
+    <h3> introduce un  producto</h3>
+    <form action="/contacto/" method="POST">
+        {% csrf_token %}
+
+       <p>Asunto:<input type="text" name="Asunto"></p>
+
+       <p>Email:<input type="text" name="Email"></p>
+
+       <p>mensaje: <textarea name="mensaje"  cols="50" rows="10"></textarea></p>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>
