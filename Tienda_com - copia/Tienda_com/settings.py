@@ -123,9 +123,9 @@ DATABASES = {
         'ENGINE':'djongo',
         "NAME":"Tienda",
         'CLIENT': {
-        "host":"mongodb+srv://Richidv:Programacion98@demodb.rnpom.mongodb.net/?retryWrites=true&w=majority",
+        "host":"mongodb+srv://Richidv:************@demodb.rnpom.mongodb.net/?retryWrites=true&w=majority",
             "username":"Richidv",
-           "password":"Programacion98",
+           "password":"************",
             "authMechanism":"SCRAM-SHA-1"
         }
     } 
@@ -177,7 +177,7 @@ EMAIL_HOST="smtp.gmail.com"
 EMAIL_USE_TLS=True
 EMAIL_PORT=587
 EMAIL_HOST_USER="hakdigital98@gmail.com"
-EMAIL_HOST_PASSWORD="programacion"
+EMAIL_HOST_PASSWORD="**************"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
